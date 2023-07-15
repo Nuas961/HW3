@@ -1,0 +1,387 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+/*HEADER*/
+.burger-button {
+	display: none;
+}
+
+.header {
+	display: flex;
+	height: 100vh;
+	color: white;
+}
+
+.background-image {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: -1;
+}
+
+.navigation-menu {
+	display: flex;
+	margin: 100px 0px 0px 150px;
+}
+
+.navigation-menu nav {
+	margin-left: 400px;
+}
+
+.navigation-menu ul {
+	display: flex;
+	font-size: 16px;
+	list-style-type: none;
+}
+
+.navigation-menu a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.menu li {
+	display: flex;
+	margin-left: 60px;
+}
+
+.header-text {
+	position: absolute;
+	flex-direction: column;
+	margin: 250px 0px 0px 150px;
+}
+
+.header-text,
+h1 {
+	font-size: 60px;
+	margin-bottom: 50px;
+}
+
+.header-text,
+p {
+	font-size: 25px;
+}
+
+.header-text__p {
+	margin-top: 100px;
+	text-decoration: underline;
+}
+
+
+/*один стиль на все элементы/т.к левый отступ у всех одинаковый */
+
+.header-text,
+.about,
+.skills h2,
+.skills img,
+.portfolio,
+.footer {
+	margin-left: 150px;
+}
+
+.about p,
+.skills p,
+.portfolio-text p,
+.footer p,
+.header-text__p {
+	font-size: 18px;
+}
+
+/*ABOUT*/
+.about {
+	display: flex;
+	height: 350px;
+	flex-direction: column;
+	margin: 150px;
+}
+
+.about p {
+	line-height: 30px;
+	margin-top: 50px;
+}
+
+/*SKILLS*/
+.skills {
+	height: 650px;
+	background-color: #FFFAF2;
+
+}
+
+.skills h2 {
+	position: absolute;
+	margin-top: 90px;
+}
+
+.skills img {
+	margin-top: 200px;
+	width: 350px;
+	height: 340px;
+}
+
+.skills hr {
+	width: 446px;
+	height: 24px;
+
+}
+
+.skills-hr1 {
+	background-image: linear-gradient(to right, #C66C49 80%, #F5D6AB 20%);
+}
+
+.skills-hr2 {
+	background-image: linear-gradient(to right, #C66C49 75%, #F5D6AB 25%);
+}
+
+.skills-hr3 {
+	background-image: linear-gradient(to right, #C66C49 60%, #F5D6AB 40%);
+}
+
+.skills-tools {
+	display: flex;
+	justify-content: end;
+	margin: -350px 100px 0px 0px;
+}
+
+.skills-tools h3 {
+	margin: 0px 40px 0px 0px;
+}
+
+.skills-tools h3,
+p,
+hr {
+	margin-bottom: 30px;
+}
+
+/*PORTFOLIO*/
+.portfolio {
+	display: flex;
+	height: 800px;
+}
+
+.portfolio-text {
+	flex-direction: column;
+}
+
+.portfolio-text,
+.portfolio-img {
+	margin-top: 90px;
+}
+
+.portfolio-text h3 {
+	margin-top: 100px;
+}
+
+.portfolio-text p {
+	width: 340px;
+	height: 145px;
+	margin-top: 50px;
+}
+
+.portfolio-arrow {
+	margin-top: 240px;
+}
+
+.portfolio-img {
+	display: flex;
+	flex-wrap: wrap;
+	width: 640px;
+	height: 400px;
+	margin: 300px 0px 0px 120px;
+	gap: 25px;
+}
+
+.portfolio-img1 {
+	width: 350px;
+	height: 145px;
+}
+
+.portfolio-img2 {
+	width: 255px;
+	height: 233px;
+}
+
+.portfolio-img3 {
+	margin-top: -90px;
+	width: 349px;
+	height: 233px;
+}
+
+.portfolio-img4 {
+	width: 255px;
+	height: 144px;
+}
+
+/*FOOTER*/
+.footer {
+	height: 550px;
+}
+
+.footer h2 {
+	margin: 0px 0px 50px 0px;
+}
+
+.footer div {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*MOBILE VERSION*/
+@media (max-width: 768px) {
+
+	/*HEADER*/
+	.navigation-menu img {
+		display: flex;
+		font-weight: bold;
+		width: 200px;
+		height: 100px;
+		margin: -50px 0px 0px 10px;
+	}
+
+	.header menu {
+		display: none;
+	}
+
+	.burger-button {
+		display: flex;
+		flex-direction: column;
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		margin: 90px 0px 0px 100px;
+	}
+
+	.burger-line {
+		width: 35px;
+		height: 3px;
+		background-color: #ffffff;
+		margin-bottom: 8px;
+	}
+
+	.header-text {
+		position: absolute;
+		margin: 180px 0px 0px 160px;
+	}
+
+	.header-text h1 {
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+
+	.header-text p {
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: -25px;
+		margin-left: 100px;
+		margin-bottom: 90px;
+	}
+
+	.header-text .header-text__p {
+		margin-left: 180px;
+	}
+
+	/*ABOUT*/
+	.about {
+		margin: -50px 100px 0px 100px;
+	}
+
+	.about h2 {
+		margin: 0px 0px 0px 230px;
+	}
+
+	.about p {
+		line-height: 25px;
+		margin-bottom: -20px;
+	}
+
+	/*SKILLS*/
+	.skills {
+		height: 950px;
+		width: 760px;
+		margin: 80px 0px 0px 0px;
+	}
+
+	.skills h2 {
+		margin: 50px 0px 0px 340px;
+	}
+
+	.skills img {
+		margin: 150px 0px 0px 220px;
+	}
+
+	.skills-tools {
+		margin: 80px 120px 0px 100px;
+	}
+
+	.skills-tools h3,
+	p {
+		font-size: 20px;
+	}
+
+	.skills hr {
+		width: 350px;
+		height: 27px;
+	}
+
+	/*PORTFOLIO*/
+	.portfolio h2 {
+		margin: -50px 0px 0px 160px;
+	}
+
+	.portfolio h3 {
+		font-size: 22px;
+		margin: 20px 0px 0px 170px;
+	}
+
+	.portfolio-text p {
+		display: flex;
+		text-align: center;
+		width: 600px;
+		height: 145px;
+		margin: 20px 0px 0px -60px;
+	}
+
+	.portfolio-arrow {
+		display: none;
+	}
+
+	.portfolio-img {
+		position: absolute;
+		margin: 270px 0px 0px -80px;
+	}
+
+	/*FOOTER*/
+
+	.footer {
+		width: 760px;
+		height: 450px;
+		background: #FFFAF2;
+		margin: -80px 110px 0px 0px;
+	}
+
+	.footer h2 {
+		position: absolute;
+		margin: 30px 0px 0px 250px;
+	}
+
+	.footer-p p {
+		display: flex;
+		flex-direction: column;
+	}
+	/**/
+	.about h2,
+	.skills h2,
+	.portfolio h2,
+	.footer h2 {
+		font-size: 40px;
+		font-weight: bold;
+	}
+}
